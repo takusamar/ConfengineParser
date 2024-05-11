@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$#" -lt 2 ]; then
+    echo "Usage: $0 <Confengine URL>"
+    exit 1
+fi
+
 URL=${1}
 IDLIST="output/idlist"
 
