@@ -10,6 +10,7 @@ Confengine のデータを抽出するツール
 
 - bash
 - python3
+- Chrome ブラウザ
 
 ### 準備
 
@@ -21,13 +22,13 @@ $ pip install -r requirements.txt
 ### 使い方
 
 ```
-$ run.sh <confengine URL>
+$ ./run.sh <confengine URL>
 ```
 
 （例）
 
 ```
-$ run.sh https://confengine.com/conferences/scrum-fest-osaka-2024
+$ ./run.sh https://confengine.com/conferences/scrum-fest-osaka-2024
 ```
 
 実行すると、output フォルダが作成されて、結果が output/proposals.json として出力されます。
