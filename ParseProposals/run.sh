@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$#" -lt 2 ]; then
+if [ "$#" -ne 1 ]; then
     echo "Usage: $0 <Confengine URL>"
     exit 1
 fi

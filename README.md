@@ -35,6 +35,20 @@ $ ./run.sh https://confengine.com/conferences/scrum-fest-osaka-2024
 
 あとは、json を整形するなり、CSV 形式に変換するなり、お好きにどうぞ。
 
+#### json を整形して出力（Mac の場合）
+
+```
+$ brew install jq
+$ jq < output/proposals.json
+```
+
+#### CSV 形式に変換（Mac の場合）
+
+```
+$ brew install csvkit
+$ in2csv output/proposals.json > output/proposals.csv
+```
+
 ### 備考
 
 - Confengine のプロポーザル一覧ページは全件を読み込めないので、Activity ページからプロポーザルの ID を取得して、各プロポーザルの詳細ページを取得する実装としている。
